@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.restButton {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    border: black solid 1px;
+    border-radius: 5px;
+}
+
+/*form {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*label {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    margin: 5px;*/
+/*}*/
+
+/* App.css */
+
+/* Stijl voor het formuliercontainer */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Stijl voor de labeltekst */
+label h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* Stijl voor invoervelden en select */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Stijl voor radio-knoppen */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Stijl voor de "Ik ga akkoord" tekst en checkbox */
+#form-terms-of-agreement {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+h4 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Stijl voor de verzendknop */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    width: 100px;
+    border: none;
+    border-radius: 3px;
+    padding: 20px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Stijl voor de resetknop */
+.restButton {
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Stijl voor de algemene foutmelding */
+.error-message {
+    color: #ff0000;
+    margin-top: 10px;
+    font-size: 14px;
+}
+

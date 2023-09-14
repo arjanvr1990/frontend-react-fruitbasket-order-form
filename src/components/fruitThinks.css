@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+article {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    border: black solid 1px;
+    border-radius: 5px;
+}
+
+h1 {
+    margin: 0px 5px;
+}
+
+
+button {
+    margin: 0px 10px;
+    width: 30px;
+    height: 30px;
+}
