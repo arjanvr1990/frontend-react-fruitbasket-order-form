@@ -1,0 +1,4 @@
+/* Stijl voor radio-knoppen */
+input[type="radio"] {
+    margin-right: 5px;
+}

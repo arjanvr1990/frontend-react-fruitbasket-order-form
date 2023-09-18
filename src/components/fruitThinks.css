@@ -1,0 +1,36 @@
+
+article {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    justify-content: space-between;
+    align-items: center;
+    border: black none 1px;
+    background-color: floralwhite;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.fruitTinksTitle {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+}
+
+h1 {
+    margin: 0px 5px;
+}
+
+.fruitTinksButton {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+}
+
+button {
+    margin: 0px 10px;
+    width: 30px;
+    height: 30px;
+}
