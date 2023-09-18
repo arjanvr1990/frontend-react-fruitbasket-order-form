@@ -1,5 +1,6 @@
 
 import React from "react";
+import "./labelFromRadio.css"
 
 function LabelFormRadio({moment, id, name, value, setValue}) {
 

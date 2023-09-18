@@ -8,9 +8,12 @@ function FruitThinks({fruitImg, fruitName, setValue, value}) {
     return (
         <>
         <article>
-            <h1>{fruitImg}</h1>
-            <h1>{fruitName}</h1>
+            <div className="fruitTinksTitle">
+                <h1>{fruitImg}</h1>
+                <h1>{fruitName}</h1>
+            </div>
 
+            <div className="fruitTinksButton">
             <button
                 type="button"
                 onClick={() => value > 0 && setValue(value - 1)}
@@ -24,6 +27,7 @@ function FruitThinks({fruitImg, fruitName, setValue, value}) {
                 type="button"
                 onClick={() => setValue(value + 1) }
             >+</button>
+            </div>
 
         </article>
 

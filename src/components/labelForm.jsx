@@ -1,7 +1,7 @@
 
-import React from "react";
+import "./labelForm.css"
 
-function LabelForm({titleName, type, id,name, value, setValue, placeholder, checked }) {
+function LabelForm({className, titleName, type, id,name, value, setValue, placeholder, checked }) {
 
 
     return (
@@ -10,6 +10,7 @@ function LabelForm({titleName, type, id,name, value, setValue, placeholder, chec
                 <label htmlFor={id}>
                     <h3>{titleName}</h3>
                     <input
+                        className={className}
                         type={type}
                         id={id}
                         name={name}

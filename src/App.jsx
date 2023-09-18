@@ -48,6 +48,9 @@ function App() {
             <>
 
                 <img src={logo} alt=""/>
+
+                <body>
+
                 <div>
                     {/*<h1>Fruitmand bezorgservice</h1>*/}
                     <FruitThinks
@@ -77,13 +80,15 @@ function App() {
                         value={kiwi}
                         setValue={setKiwi}
                     />
-                    <button className="restButton" type="button" onClick={handleReset}>Reset</button>
+                    {/*Ik heb er expres voor gekozen om voor de knoppen geen component aan te maken, het werk en het overzicht wordt na mijn mening er niet op verbeterd*/}
+                        <button className="restButton" type="button" onClick={handleReset}>Reset</button>
 
                 </div>
 
                 <form onSubmit={handleSubmit}>
 
                     <LabelForm
+                        className=""
                         titleName="Voornaam:"
                         type="text"
                         id="form-first-name"
@@ -94,6 +99,7 @@ function App() {
 
                     />
                     <LabelForm
+                        className=""
                         titleName="Achternaam:"
                         type="text"
                         id="form-last-name"
@@ -105,6 +111,7 @@ function App() {
                     />
 
                     <LabelForm
+                        className=""
                         titleName="Geboortedatum:"
                         type="text"
                         id="form-date-of-birth"
@@ -115,6 +122,7 @@ function App() {
                     />
 
                     <LabelForm
+                        className=""
                         titleName="Postcode:"
                         type="text"
                         id="form-zip-code"
@@ -174,6 +182,7 @@ function App() {
                     {/*</label>*/}
 
                     <LabelFormSelector
+                        className=""
                         titleName="Bezorgfrequentie:"
                         id="form-frequentie"
                         name="frequentie"
@@ -201,7 +210,7 @@ function App() {
                     {/*</label>*/}
 
 
-                    <div>
+                    <div className="radioButton">
                         <label htmlFor="moment-of-delivery">
                             <h3>Bezorgmoment:</h3>
                         </label>
@@ -244,9 +253,11 @@ function App() {
                         {/*    />{" "}*/}
                         {/*    S'avonds*/}
                         {/*</label>*/}
+
                     </div>
 
                     <LabelForm
+                    className="labelFormMessage"
                     titleName="Uw Bericht:"
                     type="text"
                     id="form-message"
@@ -283,12 +294,14 @@ function App() {
                         <h4>Ik ga akkoord met de voorwaarde</h4>
                     </label>
 
+                    {/*Ik heb er expres voor gekozen om voor de knoppen geen component aan te maken, het werk en het overzicht wordt na mijn mening er niet op verbeterd*/}
                     <button type="submit">
                         <h4>Versturen</h4>
                     </button>
 
 
                 </form>
+                </body>
 
             </>
         )
